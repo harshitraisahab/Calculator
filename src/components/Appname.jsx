@@ -1,17 +1,7 @@
-// import
+import styles from "./AppName.module.css";
 
-function ListComponent({ items }) {
-  return (
-    <>
-      <ul>
-        <li>
-          {items.map((item) => (
-            <li>{item}</li>
-          ))}
-        </li>
-      </ul>
-    </>
-  );
+function AppName() {
+  return <h1 className={styles.todoHeading}>TODO App</h1>;
 }
 
-export default ListComponent;
+export default AppName;
